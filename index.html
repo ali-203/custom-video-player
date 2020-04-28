@@ -7,19 +7,30 @@
     <link href="http://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
     integrity="sha384-wvfXpqpZZvQGk6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
     crossorigin="anonymous">
-<link rel="stylesheet" href="css/progr ess.css">
-<link rel="stylesheet" href="css/styl   e.css">
+<link rel="stylesheet" href="css/progress.css"/> 
+<link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
 <h1>Custom Video Player</h1>
 <video
-controls
  src="videoplayback.mp4"
 id="video"
-
 class="screen"
 poster="raza.png"
 ></video>
+<div class="controls">
+<button class="btn" id="play">
+    <i class="fa fa-play fa-2x"></i>
+</button>
+<button class="btn" id="stop">
+    <i class="fa fa-stop fa-2x"></i>
+</button>
+<input type="range" id="progress" class="progress" min="0" max="100" step="o.1"
+value="0"
+/>
+<span class="timestamp" id="timestamp">00:00</span>
+</div>
+
 
 
 
